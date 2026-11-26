@@ -62,6 +62,8 @@ extraction from raw frames?*
   later notebook.
 - Pure NumPy/SciPy/h5py/matplotlib — no torch, no GPU, minutes to run.
 
+(media/1.png)
+
 ### 2 · first decoders — the retrieval ladder
 
 `2_M2_KNN_retriever_v4.ipynb` — still on the single file. Builds the ML frame
@@ -77,6 +79,8 @@ descriptor→frame decoders:
   perfect pixels, but zero flexibility (it can only return training frames) and
   one full frame in memory per entry.
 - Also pure NumPy/SciPy (no torch, no sklearn, no pandas); a few minutes.
+
+(media/2.png)
 
 ### 3 · the CNN generator (descriptor → frame)
 
@@ -100,6 +104,8 @@ channels (`dfun` and `temperature`).
   column maps — plus, alongside it, the `M2_k1_retriever_bundle_*.pt` index of
   the training frames used as the retrieval reference.
 
+(media/3.png)
+
 ### 4 · forecasting in descriptor space
 
 `4_TCN_forecasting_v3.ipynb` — predicts the **future of the descriptor itself**,
@@ -121,6 +127,8 @@ not pixel by pixel. Same 15 files, same file-level splits, same extractor
 - Exports `FC_F2_TCN_bundle_*.pt`; forecast trajectories are written as decoder
   asks, so predicted descriptors can be rendered as frames.
 
+(media/4.png)
+
 ### 5 · the LLM service
 
 `5_BoilDesc_LLM_service_v11.ipynb` — packs the three trained models (M4
@@ -141,6 +149,8 @@ drives through **tool calling**.
   service still runs end-to-end for testing.
 - Configuration lives in `.env` next to the notebook. Without an LLM key the
   chat runs a scripted placeholder loop, but `POST /tools/render` keeps working.
+
+(media/5.png)
 
 ---
 
