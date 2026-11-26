@@ -153,6 +153,8 @@ drives through **tool calling**.
 
 ![preview](media/5.png)
 
+![preview](media/6.png)
+
 ---
 
 ## The whole demonstration
