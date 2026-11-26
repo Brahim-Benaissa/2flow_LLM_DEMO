@@ -1,0 +1,107 @@
+{
+ "notebook": "F2_soft_sensor.ipynb",
+ "version": "F2-1.0",
+ "created": "2026-11-03T10:43:34.654987",
+ "data": {
+  "root": "G:\\BoilDesc",
+  "n_cases": 15,
+  "cases": [
+   "Twall_10",
+   "Twall_100",
+   "Twall_107",
+   "Twall_13",
+   "Twall_14",
+   "Twall_15",
+   "Twall_17",
+   "Twall_18",
+   "Twall_19",
+   "Twall_21",
+   "Twall_22",
+   "Twall_23",
+   "Twall_26",
+   "Twall_75",
+   "Twall_98"
+  ],
+  "frames_total": 30015
+ },
+ "windows": {
+  "n": 5955,
+  "win_len_s": 2.0,
+  "hop_s": 0.5
+ },
+ "pca": {
+  "sensors_eff_dim": 2,
+  "theta_eff_dim": 6
+ },
+ "knn": {
+  "fwd": {
+   "k": 9,
+   "weighted": false,
+   "mean_R2": 0.5946428571428571
+  },
+  "inv": {
+   "k": 9,
+   "weighted": true,
+   "mean_R2": 0.8763333333333333
+  },
+  "note": ""
+ },
+ "roundtrip": {
+  "rt_a_mean_R2": 0.8529999999999999,
+  "rt_b_thermal": 0.9878333333333332,
+  "rt_b_hydro": 0.32987500000000003
+ },
+ "new_queries": {
+  "hold_case": "Twall_100",
+  "note": "",
+  "q1_median_R2": -0.38608255987352313,
+  "q2_median_R2_vs_mid": -0.8382989517243228
+ },
+ "figures": [
+  "F2_overview.png",
+  "F2_map_data.png",
+  "F2_case_Twall_100.png",
+  "F2_case_Twall_18.png",
+  "F2_pca_sensor.png",
+  "F2_pca_theta.png",
+  "F2_knn_sweep.png",
+  "F2_knn_pred.png",
+  "F2_rt_bars.png",
+  "F2_rt_case.png",
+  "F2_ex_Twall_100_fr1922.png",
+  "F2_ex_Twall_100_fr1923.png",
+  "F2_ex_Twall_100_fr0000.png",
+  "F2_new_queries.png"
+ ],
+ "tables": [
+  "F2_census.csv",
+  "F2_indicator_summary.csv",
+  "F2_windows.csv",
+  "F2_windows_summary.csv",
+  "F2_series_Twall_100.csv",
+  "F2_series_Twall_18.csv",
+  "F2_sensor_nan_budget.csv",
+  "F2_design_matrices.csv",
+  "F2_pca_sensor_loadings.csv",
+  "F2_pca_theta_loadings.csv",
+  "F2_pca_summary.csv",
+  "F2_knn_forward_sweep.csv",
+  "F2_knn_forward_per_indicator.csv",
+  "F2_knn_pred_panels.csv",
+  "F2_knn_inverse_sweep.csv",
+  "F2_knn_inverse_per_feature.csv",
+  "F2_rt_a_sensors.csv",
+  "F2_rt_b_indicators.csv",
+  "F2_rt_aggregate.csv",
+  "F2_recon_band.csv",
+  "F2_bubbles_Twall_100_fr1922.csv",
+  "F2_bubbles_Twall_100_fr1923.csv",
+  "F2_ex_frames_Twall_100.csv",
+  "F2_ex_pred_Twall_100.csv",
+  "F2_new_sensor_queries.csv",
+  "F2_new_query_scores.csv"
+ ],
+ "models": [
+  "models\\F2_knn_bundle.pkl"
+ ]
+}
